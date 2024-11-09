@@ -22,7 +22,7 @@ news_agent_address = "agent1q2e9kfdrxfa5dxn6zeyw47287ca36cdur9xevhmdzzfmf4cwlmah
 def home():
     return "Welcome to the Drone !"
  
-# Define an asynchronous endpoint to get news for a given company
+# Define an asynchronous endpoint 
 @app.route('/api/news/<string:gps_loc>', methods=['GET'])
 async def get_news(gps_loc):
     print(gps_loc)
